@@ -1,0 +1,13 @@
+# {{.Name}}
+
+=> / Index
+=> /section/{{.Section}}/newPost New Post
+
+## 
+{{range .Threads}}
+=> {{.ID}} {{.Name}}
+Last Activity {{.Last}}
+Comment Count {{.CommentAmount}}
+{{else}}
+A barren wasteland
+{{end}}

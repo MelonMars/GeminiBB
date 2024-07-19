@@ -1,0 +1,13 @@
+# {{.Thread}}
+
+=> {{.SectionID}} {{.SectionName}}
+
+{{.Content}}
+
+### Comments
+{{range .Comments}}
+{{.Content}}
+{{else}}
+No Comments :|
+{{end}}
+=> /section/{{.SectionID}}/{{.ThreadID}}/newComment Post a comment!

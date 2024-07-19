@@ -1,0 +1,7 @@
+# GeminiBB Example
+
+#Sections
+{{range .Section}}
+=> {{.URL}} {{.Title}}
+{{.Posts}} Posts
+{{end}}
